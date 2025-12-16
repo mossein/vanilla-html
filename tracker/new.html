@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>new issue &mdash; issues</title>
+</head>
+<body>
+
+<br><br>
+
+<center>
+<font size="6">issues</font>
+<br>
+<small>pure html issue tracker</small>
+<br><br>
+<a href="index.html">dashboard</a> &middot;
+<a href="board.html">board</a> &middot;
+<a href="list.html">list</a> &middot;
+<a href="new.html">+ new</a> &middot;
+<a href="settings.html">settings</a>
+</center>
+
+<br>
+<hr width="50%" noshade size="1">
+<br>
+
+<table width="550" align="center">
+<tr>
+<td>
+
+<h2>create new issue</h2>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+<input type="hidden" name="subject" value="New Issue Created">
+<input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+<table cellpadding="8" width="100%">
+<tr>
+<td><b>title</b> <font color="red">*</font></td>
+</tr>
+<tr>
+<td><input type="text" name="title" size="50" required placeholder="Brief description of the issue"></td>
+</tr>
+
+<tr>
+<td><b>description</b></td>
+</tr>
+<tr>
+<td><textarea name="description" rows="6" cols="50" placeholder="Detailed explanation..."></textarea></td>
+</tr>
+
+<tr>
+<td><b>priority</b></td>
+</tr>
+<tr>
+<td>
+<input type="radio" name="priority" value="low"> low
+&nbsp;&nbsp;
+<input type="radio" name="priority" value="medium" checked> medium
+&nbsp;&nbsp;
+<input type="radio" name="priority" value="high"> high
+</td>
+</tr>
+
+<tr>
+<td><b>type</b></td>
+</tr>
+<tr>
+<td>
+<select name="type">
+<option value="bug">bug</option>
+<option value="feature">feature</option>
+<option value="improvement">improvement</option>
+<option value="task">task</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><b>assignee</b></td>
+</tr>
+<tr>
+<td>
+<select name="assignee">
+<option value="">unassigned</option>
+<option value="alice">alice</option>
+<option value="bob">bob</option>
+<option value="charlie">charlie</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><b>labels</b></td>
+</tr>
+<tr>
+<td>
+<input type="checkbox" name="labels" value="frontend"> frontend
+<input type="checkbox" name="labels" value="backend"> backend
+<input type="checkbox" name="labels" value="urgent"> urgent
+<input type="checkbox" name="labels" value="docs"> docs
+</td>
+</tr>
+
+<tr>
+<td><b>due date</b></td>
+</tr>
+<tr>
+<td><input type="date" name="due_date"></td>
+</tr>
+
+<tr>
+<td><b>your email</b> <font color="red">*</font></td>
+</tr>
+<tr>
+<td><input type="email" name="email" size="50" required placeholder="for notifications"></td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td>
+<input type="submit" value="create issue">
+<input type="reset" value="clear">
+</td>
+</tr>
+</table>
+
+</form>
+
+<br>
+
+<details>
+<summary><small>how this works</small></summary>
+<blockquote>
+<small>
+this form submits to web3forms.com (free tier).<br>
+get your access key at web3forms.com and replace<br>
+YOUR_ACCESS_KEY_HERE in settings.
+</small>
+</blockquote>
+</details>
+
+</td>
+</tr>
+</table>
+
+<br>
+<hr width="50%" noshade size="1">
+<br>
+
+<center>
+<small>no css &middot; no js &middot; just html</small>
+</center>
+
+<br><br>
+
+</body>
+</html>
+

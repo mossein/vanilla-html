@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>issues</title>
+</head>
+<body>
+
+<br><br>
+
+<center>
+<font size="6">issues</font>
+<br>
+<small>pure html issue tracker</small>
+<br><br>
+<a href="index.html">dashboard</a> &middot;
+<a href="board.html">board</a> &middot;
+<a href="list.html">list</a> &middot;
+<a href="new.html">+ new</a> &middot;
+<a href="settings.html">settings</a>
+</center>
+
+<br>
+<hr width="50%" noshade size="1">
+<br>
+
+<table width="600" align="center">
+<tr>
+<td>
+
+<h2>dashboard</h2>
+
+<table border="1" cellpadding="10" cellspacing="0" width="100%">
+<tr>
+<td align="center" width="33%">
+<font size="5"><b>3</b></font><br>
+<small>open</small>
+</td>
+<td align="center" width="33%">
+<font size="5"><b>1</b></font><br>
+<small>in progress</small>
+</td>
+<td align="center" width="33%">
+<font size="5"><b>2</b></font><br>
+<small>closed</small>
+</td>
+</tr>
+</table>
+
+<br>
+
+<h3>recent activity</h3>
+
+<table width="100%" cellpadding="5">
+<tr>
+<td><small>dec 15</small></td>
+<td><a href="issue-001.html">#001</a> created</td>
+</tr>
+<tr>
+<td><small>dec 15</small></td>
+<td><a href="issue-002.html">#002</a> created</td>
+</tr>
+<tr>
+<td><small>dec 14</small></td>
+<td><a href="issue-003.html">#003</a> moved to in progress</td>
+</tr>
+<tr>
+<td><small>dec 13</small></td>
+<td><a href="issue-004.html">#004</a> closed</td>
+</tr>
+</table>
+
+<br>
+
+<h3>quick filters</h3>
+
+<form action="list.html" method="get">
+<select name="status">
+<option value="all">all issues</option>
+<option value="open">open only</option>
+<option value="progress">in progress</option>
+<option value="closed">closed</option>
+</select>
+<input type="submit" value="filter">
+</form>
+
+<br>
+
+<h3>project health</h3>
+
+<table width="100%" cellpadding="5">
+<tr>
+<td>completion</td>
+<td><meter value="2" min="0" max="6" low="2" high="4" optimum="6"></meter> 33%</td>
+</tr>
+<tr>
+<td>velocity</td>
+<td><meter value="4" min="0" max="10"></meter> 4 issues/week</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<br>
+<hr width="50%" noshade size="1">
+<br>
+
+<center>
+<small>no css &middot; no js &middot; just html</small>
+</center>
+
+<br><br>
+
+</body>
+</html>
+

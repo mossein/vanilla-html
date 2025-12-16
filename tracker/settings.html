@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>settings &mdash; issues</title>
+</head>
+<body>
+
+<br><br>
+
+<center>
+<font size="6">issues</font>
+<br>
+<small>pure html issue tracker</small>
+<br><br>
+<a href="index.html">dashboard</a> &middot;
+<a href="board.html">board</a> &middot;
+<a href="list.html">list</a> &middot;
+<a href="new.html">+ new</a> &middot;
+<a href="settings.html">settings</a>
+</center>
+
+<br>
+<hr width="50%" noshade size="1">
+<br>
+
+<table width="550" align="center">
+<tr>
+<td>
+
+<h2>settings</h2>
+
+<h3>project info</h3>
+
+<table cellpadding="8">
+<tr>
+<td><b>project name</b></td>
+<td><input type="text" value="my project" size="30"></td>
+</tr>
+<tr>
+<td><b>description</b></td>
+<td><input type="text" value="issue tracker" size="30"></td>
+</tr>
+</table>
+
+<hr size="1">
+
+<h3>form backend setup</h3>
+
+<blockquote>
+<small>
+this tracker uses <a href="https://web3forms.com" target="_blank">web3forms.com</a> to handle form submissions. it's free and requires no signup for basic use.
+</small>
+</blockquote>
+
+<table cellpadding="8">
+<tr>
+<td><b>access key</b></td>
+<td><input type="text" placeholder="your web3forms access key" size="35"></td>
+</tr>
+<tr>
+<td><b>notification email</b></td>
+<td><input type="email" placeholder="where to send submissions" size="35"></td>
+</tr>
+</table>
+
+<details>
+<summary><small>how to get an access key</small></summary>
+<blockquote>
+<small>
+1. go to <a href="https://web3forms.com">web3forms.com</a><br>
+2. enter your email<br>
+3. check inbox for access key<br>
+4. paste it above<br>
+5. update YOUR_ACCESS_KEY_HERE in new.html and issue pages
+</small>
+</blockquote>
+</details>
+
+<hr size="1">
+
+<h3>team members</h3>
+
+<table border="1" cellpadding="8" cellspacing="0" width="100%">
+<tr bgcolor="#f0f0f0">
+<th>name</th>
+<th>role</th>
+<th>issues</th>
+</tr>
+<tr>
+<td>alice</td>
+<td>developer</td>
+<td>2</td>
+</tr>
+<tr>
+<td>bob</td>
+<td>developer</td>
+<td>1</td>
+</tr>
+<tr>
+<td>charlie</td>
+<td>designer</td>
+<td>0</td>
+</tr>
+</table>
+
+<br>
+
+<form>
+<input type="text" placeholder="new member name" size="20">
+<select>
+<option>developer</option>
+<option>designer</option>
+<option>manager</option>
+</select>
+<input type="submit" value="add">
+</form>
+
+<hr size="1">
+
+<h3>about this project</h3>
+
+<blockquote>
+<b>issues</b> is a pure html issue tracker.<br><br>
+no css. no javascript. just forms, tables, and semantic html.<br><br>
+forms submit to external backends (web3forms, formspree) so data is actually captured. it's functional, not just a demo.<br><br>
+<small>built as an experiment &mdash; what can you build with html alone?</small>
+</blockquote>
+
+<hr size="1">
+
+<h3>export</h3>
+
+<form action="mailto:you@example.com" method="get" enctype="text/plain">
+<input type="hidden" name="subject" value="Issue Tracker Export">
+<input type="submit" value="email all issues to yourself">
+</form>
+
+</td>
+</tr>
+</table>
+
+<br>
+<hr width="50%" noshade size="1">
+<br>
+
+<center>
+<small>no css &middot; no js &middot; just html</small>
+</center>
+
+<br><br>
+
+</body>
+</html>
+

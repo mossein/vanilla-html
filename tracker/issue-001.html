@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>#001 &mdash; issues</title>
+</head>
+<body>
+
+<br><br>
+
+<center>
+<font size="6">issues</font>
+<br>
+<small>pure html issue tracker</small>
+<br><br>
+<a href="index.html">dashboard</a> &middot;
+<a href="board.html">board</a> &middot;
+<a href="list.html">list</a> &middot;
+<a href="new.html">+ new</a> &middot;
+<a href="settings.html">settings</a>
+</center>
+
+<br>
+<hr width="50%" noshade size="1">
+<br>
+
+<table width="600" align="center">
+<tr>
+<td>
+
+<small><a href="list.html">&larr; back to list</a></small>
+
+<h2>#001 &mdash; Auth bug on login</h2>
+
+<table cellpadding="5" width="100%">
+<tr>
+<td width="100"><b>status</b></td>
+<td>
+<form action="#" method="post" style="display:inline">
+<select name="status">
+<option value="open" selected>open</option>
+<option value="progress">in progress</option>
+<option value="closed">closed</option>
+</select>
+<input type="submit" value="update">
+</form>
+</td>
+</tr>
+<tr>
+<td><b>priority</b></td>
+<td><b>high</b></td>
+</tr>
+<tr>
+<td><b>type</b></td>
+<td>bug</td>
+</tr>
+<tr>
+<td><b>assignee</b></td>
+<td>alice</td>
+</tr>
+<tr>
+<td><b>labels</b></td>
+<td>backend, urgent</td>
+</tr>
+<tr>
+<td><b>created</b></td>
+<td>dec 15, 2024</td>
+</tr>
+<tr>
+<td><b>due</b></td>
+<td>dec 20, 2024</td>
+</tr>
+</table>
+
+<hr size="1">
+
+<h3>description</h3>
+
+<blockquote>
+Users are unable to login when using special characters in their password. The auth endpoint returns a 500 error. Steps to reproduce:
+<br><br>
+1. Go to /login<br>
+2. Enter email: test@example.com<br>
+3. Enter password with special char: p@ssw0rd!<br>
+4. Click submit<br>
+5. Observe 500 error
+</blockquote>
+
+<hr size="1">
+
+<h3>comments (2)</h3>
+
+<details open>
+<summary><b>alice</b> &mdash; <small>dec 15, 10:30am</small></summary>
+<blockquote>
+I can reproduce this. Looks like the password isn't being escaped properly before the SQL query. Working on a fix.
+</blockquote>
+</details>
+
+<details open>
+<summary><b>bob</b> &mdash; <small>dec 15, 11:45am</small></summary>
+<blockquote>
+This might also affect the password reset flow. Can you check that too @alice?
+</blockquote>
+</details>
+
+<hr size="1">
+
+<h3>add comment</h3>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+<input type="hidden" name="subject" value="Comment on Issue #001">
+<input type="hidden" name="issue_id" value="001">
+
+<table cellpadding="5" width="100%">
+<tr>
+<td><input type="text" name="name" placeholder="your name" size="30" required></td>
+</tr>
+<tr>
+<td><textarea name="comment" rows="4" cols="50" placeholder="your comment..." required></textarea></td>
+</tr>
+<tr>
+<td><input type="submit" value="post comment"></td>
+</tr>
+</table>
+</form>
+
+</td>
+</tr>
+</table>
+
+<br>
+<hr width="50%" noshade size="1">
+<br>
+
+<center>
+<small>no css &middot; no js &middot; just html</small>
+</center>
+
+<br><br>
+
+</body>
+</html>
+

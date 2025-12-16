@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>list &mdash; issues</title>
+</head>
+<body>
+
+<br><br>
+
+<center>
+<font size="6">issues</font>
+<br>
+<small>pure html issue tracker</small>
+<br><br>
+<a href="index.html">dashboard</a> &middot;
+<a href="board.html">board</a> &middot;
+<a href="list.html">list</a> &middot;
+<a href="new.html">+ new</a> &middot;
+<a href="settings.html">settings</a>
+</center>
+
+<br>
+<hr width="50%" noshade size="1">
+<br>
+
+<table width="700" align="center">
+<tr>
+<td>
+
+<form action="list.html" method="get">
+<b>filter:</b>
+<select name="status">
+<option value="all">all</option>
+<option value="open">open</option>
+<option value="progress">in progress</option>
+<option value="closed">closed</option>
+</select>
+<select name="priority">
+<option value="all">any priority</option>
+<option value="high">high</option>
+<option value="medium">medium</option>
+<option value="low">low</option>
+</select>
+<select name="assignee">
+<option value="all">anyone</option>
+<option value="alice">alice</option>
+<option value="bob">bob</option>
+<option value="unassigned">unassigned</option>
+</select>
+<input type="submit" value="apply">
+</form>
+
+<br>
+
+<table border="1" cellpadding="8" cellspacing="0" width="100%">
+<tr bgcolor="#f0f0f0">
+<th>#</th>
+<th>title</th>
+<th>status</th>
+<th>priority</th>
+<th>assignee</th>
+<th>date</th>
+</tr>
+<tr>
+<td><a href="issue-001.html">001</a></td>
+<td>Auth bug on login</td>
+<td>open</td>
+<td><b>high</b></td>
+<td>alice</td>
+<td><small>dec 15</small></td>
+</tr>
+<tr>
+<td><a href="issue-002.html">002</a></td>
+<td>Add dark mode support</td>
+<td>open</td>
+<td>low</td>
+<td>&mdash;</td>
+<td><small>dec 15</small></td>
+</tr>
+<tr>
+<td><a href="issue-003.html">003</a></td>
+<td>API rate limiting</td>
+<td>in progress</td>
+<td><b>high</b></td>
+<td>alice</td>
+<td><small>dec 14</small></td>
+</tr>
+<tr bgcolor="#f9f9f9">
+<td><a href="issue-004.html"><s>004</s></a></td>
+<td><s>Fix typo in header</s></td>
+<td>closed</td>
+<td>low</td>
+<td>bob</td>
+<td><small>dec 13</small></td>
+</tr>
+<tr>
+<td><a href="issue-005.html">005</a></td>
+<td>Mobile navigation broken</td>
+<td>open</td>
+<td>medium</td>
+<td>bob</td>
+<td><small>dec 12</small></td>
+</tr>
+<tr bgcolor="#f9f9f9">
+<td><a href="issue-006.html"><s>006</s></a></td>
+<td><s>Update dependencies</s></td>
+<td>closed</td>
+<td>medium</td>
+<td>alice</td>
+<td><small>dec 10</small></td>
+</tr>
+</table>
+
+<br>
+
+<center>
+<small>showing 6 issues &middot; <a href="new.html">create new &rarr;</a></small>
+</center>
+
+</td>
+</tr>
+</table>
+
+<br>
+<hr width="50%" noshade size="1">
+<br>
+
+<center>
+<small>no css &middot; no js &middot; just html</small>
+</center>
+
+<br><br>
+
+</body>
+</html>
+
